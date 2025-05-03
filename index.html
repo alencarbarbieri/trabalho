@@ -2,15 +2,17 @@
 <html>
 <head>
     <title>Minha Página Pessoal</title>
+
+    <!-- ====== INÍCIO DO CSS (DESTACADO EM VERMELHO) ====== -->
     <style>
         body {
-            background-color: #f0f8ff; /* cor suave */
+            background-color: #f0f8ff;
             font-family: Arial, sans-serif;
             margin: 20px;
         }
 
         h1 {
-            color: #2a5d84; /* cor diferente */
+            color: #2a5d84;
             text-align: center;
         }
 
@@ -33,6 +35,12 @@
             width: 50%;
             border-collapse: collapse;
             margin-top: 20px;
+            background-color: #f0f0f0;
+        }
+
+        th {
+            background-color: #d0e7ff;
+            color: #000;
         }
 
         table, th, td {
@@ -52,7 +60,20 @@
         a:hover {
             color: #cc3300;
         }
+
+        #mensagem {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #2a5d84;
+        }
     </style>
+    <!-- ====== FIM DO CSS (DESTACADO EM VERMELHO) ====== -->
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerText = "Bem-vindo à minha página! Continue sempre aprendendo!";
+        }
+    </script>
 </head>
 <body>
 
@@ -63,6 +84,10 @@
         Sou Bacharel em Ciência da Computação e Advogado. Gosto de tecnologia, e adoro
         conhecer e compreender sobre novas tecnologias.
     </p>
+
+    <!-- Botão para interação -->
+    <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+    <div id="mensagem"></div>
 
     <h2>Meus Hobbies</h2>
     <ul>
@@ -100,4 +125,3 @@
 
 </body>
 </html>
-
