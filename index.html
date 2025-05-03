@@ -3,34 +3,40 @@
 <head>
     <title>Minha Página Pessoal</title>
 
-    <!-- ====== INÍCIO DO CSS (DESTACADO EM VERMELHO) ====== -->
+    <!-- ====== INÍCIO DO CSS (ESTILOS DA PÁGINA) ====== -->
     <style>
+        /* Estilo geral do corpo da página */
         body {
-            background-color: #f0f8ff;
+            background-color: #add8e6; /* azul claro */
             font-family: Arial, sans-serif;
             margin: 20px;
         }
 
+        /* Estilo do título principal */
         h1 {
             color: #2a5d84;
             text-align: center;
         }
 
+        /* Estilo dos parágrafos */
         p {
             font-size: 18px;
             text-align: justify;
         }
 
+        /* Estilo da lista de hobbies */
         ul li {
             margin-bottom: 10px;
         }
 
+        /* Estilo das imagens */
         img {
             border-radius: 10px;
             max-width: 100%;
             height: auto;
         }
 
+        /* Estilo da tabela */
         table {
             width: 50%;
             border-collapse: collapse;
@@ -38,57 +44,68 @@
             background-color: #f0f0f0;
         }
 
+        /* Estilo do cabeçalho da tabela */
         th {
             background-color: #d0e7ff;
             color: #000;
         }
 
+        /* Estilo das bordas da tabela */
         table, th, td {
             border: 1px solid #333;
         }
 
+        /* Estilo das células da tabela */
         th, td {
             padding: 10px;
             text-align: center;
         }
 
+        /* Estilo dos links */
         a {
             color: #0066cc;
             text-decoration: none;
         }
 
+        /* Estilo dos links ao passar o mouse */
         a:hover {
             color: #cc3300;
         }
 
+        /* Estilo da mensagem exibida via JavaScript */
         #mensagem {
             margin-top: 10px;
             font-weight: bold;
             color: #2a5d84;
         }
     </style>
-    <!-- ====== FIM DO CSS (DESTACADO EM VERMELHO) ====== -->
+    <!-- ====== FIM DO CSS (ESTILOS DA PÁGINA) ====== -->
 
+    <!-- ====== INÍCIO DO JAVASCRIPT ====== -->
     <script>
         function mostrarMensagem() {
             document.getElementById("mensagem").innerText = "Fico muito feliz pelo seu interesse em me conhecer. Agradeço de coração pela visita!";
         }
     </script>
+    <!-- ====== FIM DO JAVASCRIPT ====== -->
 </head>
 <body>
 
+    <!-- Título da página -->
     <h1>Alencar Barbieri</h1>
 
+    <!-- Parágrafo de apresentação -->
     <p>
         Sou Alencar Barbieri, tenho 44 anos e moro em Descanso, estado de Santa Catarina.
         Sou Bacharel em Ciência da Computação e Advogado. Gosto de tecnologia, e adoro
         conhecer e compreender sobre novas tecnologias.
     </p>
 
-    <!-- Botão para interação -->
+    <!-- Botão interativo -->
     <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
     <div id="mensagem"></div>
 
+    <!-- Lista de hobbies -->
     <h2>Meus Hobbies</h2>
     <ul>
         <li>Treinar na academia</li>
@@ -96,8 +113,10 @@
         <li>Jogar Beach Tennis</li>
     </ul>
 
+    <!-- Imagem ilustrativa -->
     <img src="beach.jpg" alt="Beach Tennis" width="300">
 
+    <!-- Tabela com países e imagens -->
     <h2>Países que gostaria de visitar</h2>
     <table>
         <tr>
@@ -118,6 +137,7 @@
         </tr>
     </table>
 
+    <!-- Link para site favorito -->
     <p>
         Acesse meu site favorito sobre direito: 
         <a href="https://www.migalhas.com.br/" target="_blank">Migalhas</a>
